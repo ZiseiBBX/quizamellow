@@ -4,6 +4,7 @@ import { shuffle } from "../utilities/functions";
 import Option from "../components/Option";
 import useStore from "../store/store";
 import { useNavigate } from "react-router-dom";
+import QuizamellowIcon from "../quizamellow_logo.png";
 
 function Home() {
 	const [index, setIndex] = useState(0);
@@ -69,6 +70,9 @@ function Home() {
 					)}
 					{quizData.length === 0 && (
 						<Box textAlign="center">
+							<Box h="12" w="12" mx="auto">
+								<img src={QuizamellowIcon} />
+							</Box>
 							<Text fontWeight="600" fontSize="1.75rem" mb="4" color="yellow.600">
 								Quizamellow
 							</Text>
